@@ -1,12 +1,12 @@
 ﻿**********************
 Windows PowerShell transcript start
-Start time: 20231018164518
+Start time: 20231019091208
 Username: REDDY\CHANDANA REDDY
 RunAs User: REDDY\CHANDANA REDDY
 Configuration Name: 
 Machine: REDDY (Microsoft Windows NT 10.0.19045.0)
 Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\CHANDANA REDDY\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\browser\media\shellIntegration.ps1" } catch {}
-Process ID: 11012
+Process ID: 10744
 PSVersion: 5.1.19041.3570
 PSEdition: Desktop
 PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.3570
@@ -15,10 +15,4 @@ CLRVersion: 4.0.30319.42000
 WSManStackVersion: 3.0
 PSRemotingProtocolVersion: 2.3
 SerializationVersion: 1.1.0.1
-**********************
-Transcript started, output file is c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem01_session.txt
-PS C:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy> Stop-Transcript
-**********************
-Windows PowerShell transcript end
-End time: 20231018164735
 **********************

@@ -1,6 +1,6 @@
 ﻿**********************
 Windows PowerShell transcript start
-Start time: 20231026162932
+Start time: 20231026163942
 Username: REDDY\CHANDANA REDDY
 RunAs User: REDDY\CHANDANA REDDY
 Configuration Name: 
@@ -17,8 +17,3 @@ PSRemotingProtocolVersion: 2.3
 SerializationVersion: 1.1.0.1
 **********************
 Transcript started, output file is c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem03_session.txt
-PS C:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy> Stop-Transcript
-**********************
-Windows PowerShell transcript end
-End time: 20231026163930
-**********************

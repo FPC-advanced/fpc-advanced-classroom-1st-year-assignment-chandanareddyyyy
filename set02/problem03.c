@@ -39,7 +39,7 @@ void output(int n, int result)
     {
         printf("the number %d is composite",n);
     }
-    if(result=0)
+    else if(result=0)
     {
         printf("the number %d is not composite",n);
     }

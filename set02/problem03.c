@@ -34,7 +34,7 @@ else{
     result=0;
 }
 }
-
+return result;
 }
 void output(int n, int result)
 {

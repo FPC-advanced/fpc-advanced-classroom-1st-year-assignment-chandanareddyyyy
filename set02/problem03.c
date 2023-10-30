@@ -20,7 +20,7 @@ int input_number()
 int is_composite(int n)
 {
     int result;
-if(n<=0) // checking if n is 0 or 1 to eliminate it.
+if(n<=1) // checking if n is 0 or 1 to eliminate it.
 {
     result=0; //take result as 0 if n is 0  or 1
 }

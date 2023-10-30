@@ -24,13 +24,16 @@ if(n<=0)
 {
     result=0;
 }
-else if(n%2==0)
+for(int i=2;i<n;i++)
+{ if(n%i==0)
 {
     result=1;
 }
 else{
     result=0;
 }
+}
+
 }
 void output(int n, int result)
 {

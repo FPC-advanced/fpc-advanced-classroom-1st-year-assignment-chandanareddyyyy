@@ -12,8 +12,13 @@ int input_array_size()
 }
 void input_array(int n, int a[n])
 {
+    int i;
     printf("enter the composite numbers of the array:\n");
-    scanf("%d",&a[n]);
+    for(i=0;i<=n;i++)
+    {
+      scanf("%d",&a[n]);
+    }
+    
 
 }
 int sum_composite_numbers(int n, int a[n])

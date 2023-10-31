@@ -26,11 +26,11 @@ int sum_composite_numbers(int n, int a[n])
     int sum=0,i;
     for(i=0;i<n;i++)
     {
-        sum=sum+a[i];
+        sum=sum+i;
     }
     return sum;
 }
-void output(int sum)
+void output(int summ)
 {
     printf("the sum of composite numbers is:\n",summ);
 }
@@ -40,7 +40,7 @@ int main()
      n =input_array_size();
     input_array(n,a);
     summ=sum_composite_numbers(n,a);
-    output(sum);
+    output(summ);
 
 return 0;
 

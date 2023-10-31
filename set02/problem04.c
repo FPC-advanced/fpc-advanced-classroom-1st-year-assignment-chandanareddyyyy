@@ -6,7 +6,7 @@ void output(int sum);
 int input_array_size()
 {
     int n;
-    printf("input the array size:/n");
+    printf("input the array size:\n");
     scanf("%d",&n);
     return n;
 }

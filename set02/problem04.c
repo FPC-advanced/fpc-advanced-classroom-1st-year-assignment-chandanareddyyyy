@@ -26,7 +26,7 @@ int sum_composite_numbers(int n, int a[n])
     int sum,i;
     for(i=0;i<n;i++)
     {
-        sum=sum+a[i];
+        sum=sum+i;
     }
     return sum;
 }

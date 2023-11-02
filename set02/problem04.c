@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdbool.h>
 
 int input_array_size() {
     int size;
@@ -15,34 +14,22 @@ void input_array(int n, int a[n]) {
     }
 }
 
-bool is_composite(int num) 
-{
-    if (num <= 1) {
-        return 0;
-    }
-    if (num <= 3) {
-        return 0;
-    }
-    if (num % 2 == 0 || num % 3 == 0) {
-        return 1;
-    }
-    for (int i = 2; i<= num; i++) {
-        if (num % i == 0) {
-            return 1;
-        }
-    }
-    return 0;
-}
-
 int sum_composite_numbers(int n, int a[n]) 
 {
-    int sum = 0;
-    for (int i = 0; i < n; i++) {
-        if (is_composite(a[i])) {
+    int i,j,sum = 0;
+    for (int i = 0; i < n; i++) 
+    {
+        for (i=2;i<=a[j]/2;i++) 
+        {
+            if(a[j]/i==0)
             sum=sum+a[i];
+            return sum;
+            break;
         }
+        return 1;
     }
-    return sum;
+    return 0;
+   
 }
 
 void output(int sum) 
@@ -52,10 +39,11 @@ void output(int sum)
 
 int main() 
 {
+    int sum;
     int n = input_array_size();
     int a[n];
     input_array(n, a);
-    int compositeSum = sum_composite_numbers(n, a);
-    output(compositeSum);
+    sum= sum_composite_numbers(n, a);
+    output(sum);
     return 0;
 }

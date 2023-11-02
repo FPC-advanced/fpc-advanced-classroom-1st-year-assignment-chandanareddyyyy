@@ -8,3 +8,18 @@
 43	
 44	int main() 
 45	{
+46	    int sum;
+47	    int n = input_array_size();
+48	    int a[n];
+49	    input_array(n, a);
+50	    sum= sum_composite_numbers(n, a);
+51	    output(sum);
+52	    return 0;
+53	}
+Line number 54 out of range; c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem04.c has 53 lines.
+Line number 54 out of range; c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem04.c has 53 lines.
+Undefined command: "gdb".  Try "help".
+The program is not being run.
+Undefined set logging command: "enabled on".  Try "help set logging".
+Already logging to problem04_debug_log.txt.
+Line number 54 out of range; c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem04.c has 53 lines.

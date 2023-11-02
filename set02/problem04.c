@@ -23,7 +23,6 @@ int sum_composite_numbers(int n, int a[n])
         {
             if(a[j]/i==0)
             sum=sum+a[i];
-            return sum;
             break;
         }
         return 1;

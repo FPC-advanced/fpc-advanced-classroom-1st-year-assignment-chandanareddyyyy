@@ -55,9 +55,7 @@ int main()
     int n = input_array_size();
     int a[n];
     input_array(n, a);
-
     int compositeSum = sum_composite_numbers(n, a);
     output(compositeSum);
-
     return 0;
 }

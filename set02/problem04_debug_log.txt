@@ -1,0 +1,10 @@
+36	   
+37	}
+38	
+39	void output(int sum) 
+40	{
+41	    printf("The sum of composite numbers in the array is: %d\n", sum);
+42	}
+43	
+44	int main() 
+45	{

@@ -1,3 +1,10 @@
 +exit
 Undefined command: "exit".  Try "help".
 +q
++l
+No symbol table is loaded.  Use the "file" command.
++L
+No symbol table is loaded.  Use the "file" command.
++exit
+Undefined command: "exit".  Try "help".
++q

@@ -1,3 +1,14 @@
 +l
 No symbol table is loaded.  Use the "file" command.
 +q
++l
+No symbol table is loaded.  Use the "file" command.
++file
+No executable file now.
+No symbol file now.
++s
+The program is not being run.
++start
+No symbol table loaded.  Use the "file" command.
++l
+No symbol table is loaded.  Use the "file" command.

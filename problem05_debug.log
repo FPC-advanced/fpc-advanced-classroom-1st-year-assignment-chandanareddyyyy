@@ -19,3 +19,5 @@ No executable specified, use `target exec'.
 +q
 +l
 No symbol table is loaded.  Use the "file" command.
++l
+No symbol table is loaded.  Use the "file" command.

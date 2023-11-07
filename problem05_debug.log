@@ -17,3 +17,5 @@ No symbol table is loaded.  Use the "file" command.
 Starting program:  
 No executable specified, use `target exec'.
 +q
++l
+No symbol table is loaded.  Use the "file" command.

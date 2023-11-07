@@ -11,3 +11,9 @@ Undefined command: "exit".  Try "help".
 +exit
 Undefined command: "exit".  Try "help".
 +q
++l
+No symbol table is loaded.  Use the "file" command.
++run
+Starting program:  
+No executable specified, use `target exec'.
++q

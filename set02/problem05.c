@@ -14,7 +14,7 @@ int find_gcd(int a,int b, int gcd)
   {
     if(a%i==0&&b%i==0)
     {
-        gcd=i;
+        gcd=i; 
     }
   }
 
@@ -30,5 +30,5 @@ int main()
     b=input();
     gcd=find_gcd(a, b, gcd);
     output(a, b, gcd);
-    return 0;
+    return 0; 
 }

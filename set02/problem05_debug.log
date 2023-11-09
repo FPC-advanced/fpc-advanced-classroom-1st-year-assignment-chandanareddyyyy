@@ -12,3 +12,45 @@ The program is not being run.
 No symbol table loaded.  Use the "file" command.
 +l
 No symbol table is loaded.  Use the "file" command.
++l
+20	
+21	}
+22	void output(int a, int b, int gcd)
+23	{
+24	 printf("The GCD of %d and %d is %d",a,b,gcd);
+25	}
+26	int main()
+27	{
+28	    int a,b,gcd;
+29	    a=input();
++l
+30	    b=input();
+31	    gcd=find_gcd(a, b, gcd);
+32	    output(a, b, gcd);
+33	    return 0;
+34	}+l
+Line number 35 out of range; c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c has 34 lines.
++b 6
+Breakpoint 1 at 0x401466: file c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c, line 6.
++b 10
+Breakpoint 2 at 0x40148c: file c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c, line 10.
++b 11
+Breakpoint 3 at 0x401495: file c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c, line 11.
++b 21
+Breakpoint 4 at 0x4014d2: file c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c, line 21.
++b 22
+Breakpoint 5 at 0x4014db: file c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c, line 22.
++b 25
+Breakpoint 6 at 0x4014fc: file c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c, line 25.
++b 25
+Note: breakpoint 6 also set at pc 0x4014fc.
+Breakpoint 7 at 0x4014fc: file c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c, line 25.
++run
+Starting program: C:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02/./problem05.exe 
+[New Thread 11368.0x14fc]
+[New Thread 11368.0x3e8c]
+
+Breakpoint 1, input () at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:8
+8	    printf("Enter the two number");
++43 66
+Undefined command: "43".  Try "help".

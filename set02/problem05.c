@@ -7,6 +7,7 @@ int input()
     int x;
     printf("Enter the two number");
     scanf("%d",&x); 
+    return x;
 }
 int find_gcd(int a,int b, int gcd)
 {

@@ -103,3 +103,45 @@ Program received signal SIGFPE, Arithmetic exception.
 [Inferior 1 (process 15860) exited with code 030000000224]
 +n
 The program is not being run.
++l
+20	
+21	}
+22	void output(int a, int b, int gcd)
+23	{
+24	 printf("The GCD of %d and %d is %d",a,b,gcd);
+25	}
+26	int main()
+27	{
+28	    int a,b,gcd;
+29	    a=input();
++b 26
+Breakpoint 1 at 0x401506: file c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c, line 26.
++b 29
+Note: breakpoint 1 also set at pc 0x401506.
+Breakpoint 2 at 0x401506: file c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c, line 29.
++b 30
+Breakpoint 3 at 0x40150f: file c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c, line 30.
++b 31
+Breakpoint 4 at 0x401518: file c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c, line 31.
++b 32
+Breakpoint 5 at 0x401538: file c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c, line 32.
++r
+Starting program: c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02/./problem05.exe 
+[New Thread 3780.0x1494]
+[New Thread 3780.0x1e00]
+
+Breakpoint 1, main () at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:29
+29	    a=input();
++step
+input () at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:8
+8	    printf("Enter the two number");
++23 43
+Undefined command: "23".  Try "help".
++n
+9	    scanf("%d",&x); 
++quit
+A debugging session is active.
+
+	Inferior 1 [process 3780] will be killed.
+
+Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5

@@ -54,3 +54,52 @@ Breakpoint 1, input () at c:\Users\fpc-advanced-classroom-1st-year-assignment-ch
 8	    printf("Enter the two number");
 +43 66
 Undefined command: "43".  Try "help".
++l
+warning: Source file is more recent than executable.
+20	
+21	}
+22	void output(int a, int b, int gcd)
+23	{
+24	 printf("The GCD of %d and %d is %d",a,b,gcd);
+25	}
+26	int main()
+27	{
+28	    int a,b,gcd;
+29	    a=input();
++l
+30	    b=input();
+31	    gcd=find_gcd(a, b, gcd);
+32	    output(a, b, gcd);
+33	    return 0; 
+34	}+git add .
+Undefined command: "git".  Try "help".
++git commit -m "committed 11/9/2023, 4:09:12 PM"
+Undefined command: "git".  Try "help".
++git push
+Undefined command: "git".  Try "help".
++run
+Starting program: C:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02/./problem05.exe 
+[New Thread 14652.0x1ab8]
+[New Thread 14652.0xc9c]
+
+Program received signal SIGFPE, Arithmetic exception.
+0x004014a2 in find_gcd (a=2, b=2, gcd=0) at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:15
+15	    if(a%i==0&&b%i==0)
++run
+The program being debugged has been started already.
+Start it from the beginning? (y or n) Starting program: C:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02/./problem05.exe 
+[New Thread 15860.0x3e8c]
+[New Thread 15860.0x2b30]
+
+Program received signal SIGFPE, Arithmetic exception.
+0x004014a2 in find_gcd (a=2, b=2, gcd=0) at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:15
+15	a%i==0&&b%i==0)
++n
+
+Program received signal SIGFPE, Arithmetic exception.
+0x004014a2 in find_gcd (a=2, b=2, gcd=0) at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:15
+15	a%i==0&&b%i==0)
++n
+[Inferior 1 (process 15860) exited with code 030000000224]
++n
+The program is not being run.

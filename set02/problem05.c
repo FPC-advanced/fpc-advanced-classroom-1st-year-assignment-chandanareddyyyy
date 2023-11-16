@@ -4,9 +4,9 @@ int find_gcd(int a, int b, int gcd);
 void output(int a, int b, int gcd);
 int input()
 {
-    int a,b;
+    int x;
     printf("Enter the two number");
-    scanf("%d%d",&a,&b);
+    scanf("%d",&x); 
 }
 int find_gcd(int a,int b, int gcd)
 {

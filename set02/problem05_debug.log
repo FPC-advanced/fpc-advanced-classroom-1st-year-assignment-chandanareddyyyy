@@ -167,3 +167,10 @@ main () at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\
 
 Breakpoint 1, input () at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:9
 9	    scanf("%d",&x); 
++n
+10	}
++n
+main () at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:31
+31	    gcd=find_gcd(a, b, gcd);
++p a
+$1 = 1

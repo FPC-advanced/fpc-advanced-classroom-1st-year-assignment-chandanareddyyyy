@@ -151,3 +151,19 @@ Breakpoint 1 at 0x401472: file c:\Users\fpc-advanced-classroom-1st-year-assignme
 Breakpoint 2 at 0x40148e: file c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c, line 11.
 +b 22
 Breakpoint 3 at 0x4014d4: file c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c, line 22.
++r
+Starting program: c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02/./problem05.exe 
+[New Thread 9104.0x11e4]
+[New Thread 9104.0x3504]
+
+Breakpoint 1, input () at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:9
+9	    scanf("%d",&x); 
++n
+10	}
++n
+main () at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:30
+30	    b=input();
++n
+
+Breakpoint 1, input () at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:9
+9	    scanf("%d",&x); 

@@ -174,3 +174,76 @@ main () at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\
 31	    gcd=find_gcd(a, b, gcd);
 +p a
 $1 = 1
++n
+
+Breakpoint 2, find_gcd (a=1, b=1, gcd=0) at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:13
+13	  for(int i=0;i<=a&&i<=b;i++)
++p b
+$2 = 1
++n
+15	    if(a%i==0&&b%i==0)
++n
+
+Program received signal SIGFPE, Arithmetic exception.
+0x0040149b in find_gcd (a=1, b=1, gcd=0) at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:15
+15	    if(a%i==0&&b%i==0)
++c
+Continuing.
+
+Program received signal SIGFPE, Arithmetic exception.
+0x0040149b in find_gcd (a=1, b=1, gcd=0) at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:15
+15	    if(a%i==0&&b%i==0)
++c
+Continuing.
+[Inferior 1 (process 9104) exited with code 030000000224]
++cd "c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02"
+"c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02": Invalid argument.
++gdb ./problem05
+Undefined command: "gdb".  Try "help".
++c
+The program is not being run.
++set logging file problem05_debug.log
++set logging enabled on
+Undefined set logging command: "enabled on".  Try "help set logging".
++set logging on
+Already logging to problem05_debug.log.
++set trace-commands on
++b 9
+Note: breakpoint 1 also set at pc 0x401472.
+Breakpoint 4 at 0x401472: file c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c, line 9.
++b main
+Breakpoint 5 at 0x401506: file c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c, line 29.
++info b
+Num     Type           Disp Enb Address    What
+1       breakpoint     keep y   0x00401472 in input at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:9
+	breakpoint already hit 2 times
+2       breakpoint     keep y   0x0040148e in find_gcd at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:11
+	breakpoint already hit 1 time
+3       breakpoint     keep y   0x004014d4 in output at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:22
+4       breakpoint     keep y   0x00401472 in input at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:9
+5       breakpoint     keep y   0x00401506 in main at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:29
++disable 2
++disable 4
++disable 5
++info b
+Num     Type           Disp Enb Address    What
+1       breakpoint     keep y   0x00401472 in input at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:9
+	breakpoint already hit 2 times
+2       breakpoint     keep n   0x0040148e in find_gcd at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:11
+	breakpoint already hit 1 time
+3       breakpoint     keep y   0x004014d4 in output at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:22
+4       breakpoint     keep n   0x00401472 in input at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:9
+5       breakpoint     keep n   0x00401506 in main at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:29
++r
+Starting program: c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02/./problem05.exe 
+[New Thread 9992.0x6dc]
+[New Thread 9992.0x1eb0]
+
+Breakpoint 1, input () at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:9
+9	    scanf("%d",&x); 
++5
+Undefined command: "5".  Try "help".
++n
+10	}
++p x
+$3 = 6

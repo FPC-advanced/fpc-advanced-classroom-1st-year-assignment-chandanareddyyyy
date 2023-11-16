@@ -18,7 +18,7 @@ int find_gcd(int a,int b, int gcd)
         gcd=i; 
     }
   }
-
+     return gcd;
 }
 void output(int a, int b, int gcd)
 {

@@ -31,9 +31,11 @@ int compare(int a, int b, int c)
  {
     if (a >= b&& a >=c) {
         return a;
-    } else if ( b >= c) {
+    } 
+    else if ( b >= c) {
         return b;
-    } else {
+    } 
+    else {
         return c;
     }
 }

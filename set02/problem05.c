@@ -1,7 +1,7 @@
 #include<stdio.h>
 int input();
 int find_gcd(int a, int b, int gcd);
-void output(int a, int b, int gcd);
+void output(int a, int b);
 int input()
 {
     int x;
@@ -9,7 +9,7 @@ int input()
     scanf("%d",&x); 
     return x;
 }
-int find_gcd(int a,int b, int gcd)
+int find_gcd(int a,int b)
 {
   for(int i=0;i<=a&&i<=b;i++)
   {
@@ -20,7 +20,7 @@ int find_gcd(int a,int b, int gcd)
   }
      return gcd;
 }
-void output(int a, int b, int gcd)
+void output(int a, int b)
 {
  printf("The GCD of %d and %d is %d",a,b,gcd);
 }

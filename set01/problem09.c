@@ -24,7 +24,7 @@ float input() {
 
 float square_root(float n) {
     float x = n; 
-    float y = 1.0; 
+    float y = 1.0;
     while (fabs(x - y) > 0.00001) {
         x = (x + y) / 2.0;
         y = n / x;

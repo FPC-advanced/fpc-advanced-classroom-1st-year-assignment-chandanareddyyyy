@@ -20,14 +20,14 @@ int input_number()
 int is_composite(int n)
 {
 
-if(n<=1) // checking if n is 0 or 1 to eliminate it.
+if(n<=1) 
 {
- //take result as 0 if n is 0  or 1
+ 
     return 0;
 }
-for(int i=2;i<n;i++) // start a for loop to start checking from 2 (as 1 and 0 are eliminated)start from 2 and finish at n.
+for(int i=2;i<n;i++) 
 { 
-    if(n%i==0) // for example if n=4 i will check for 2= true, then check for 3=false, then 4(n)=true and return 1; if n was 5 it would not return 1 but exit the if and for loop and return 0;
+    if(n%i==0)
 {
     
     return 1;

@@ -254,3 +254,67 @@ A debugging session is active.
 
 Quit anyway? (y or n) error return ../../gdb-7.6.1/gdb/windows-nat.c:1275 was 5
 +quit
++l
+22	     return gcd;
+23	}
+24	void output(int a, int b, int gcd)
+25	{
+26	 printf("The GCD of %d and %d is %d",a,b,gcd);
+27	}
+28	int main()
+29	{
+30	    int a,b,gcd;
+31	    a=input();
++l
+32	    b=input();
+33	    gcd=find_gcd(a, b);
+34	    output(a, b, gcd);
+35	    return 0; 
+36	}+b 28
+Breakpoint 1 at 0x40150a: file c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c, line 28.
++r
+Starting program: c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02/./problem05.exe 
+[New Thread 14616.0x1e8c]
+
+Breakpoint 1, main () at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:31
+31	    a=input();
++step
+input () at c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set02\problem05.c:8
+8	    printf("Enter the two number");
++p 58
+$1 = 58
++p 67
+$2 = 67
++n
+[New Thread 14616.0x3804]
+9	    scanf("%d",&x); 
++p 58
+$3 = 58
++p 68
+$4 = 68
++n
+10	    return x;
++p x
+$5 = 6422476
++n
+11	}
++p x
+$6 = 6422476
++git add .
+Undefined command: "git".  Try "help".
++git commit -m "committed 12/1/2023, 7:01:06 PM"
+Undefined command: "git".  Try "help".
++git push
+Undefined command: "git".  Try "help".
++git push
+Undefined command: "git".  Try "help".
++gcc -g "c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\problem06.c" -o "c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\problem06.exe" 2>&1
+Undefined command: "gcc".  Try "help".
++"c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\problem06.exe"
+Undefined command: "".  Try "help".
++git add .
+Undefined command: "git".  Try "help".
++git commit -m "committed 12/1/2023, 7:10:11 PM"
+Undefined command: "git".  Try "help".
++git push
+Undefined command: "git".  Try "help".

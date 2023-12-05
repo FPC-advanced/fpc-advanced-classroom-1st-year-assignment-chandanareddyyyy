@@ -1,42 +1,38 @@
 #include <stdio.h>
 
-struct _complex 
-{
-	float real;
-	float imaginary;
-};
-typedef struct _complex Complex;
-
-Complex input_complex();
-Complex add_complex(Complex a, Complex b);
-void output(Complex a, Complex b, Complex sum);
+float input();
+float square_root(float n);
+void output(float n, float sqrroot);
 
 int main()
 {
-    Complex a,b,sum;
-    a=input_complex();
-    b=input_complex();
-    sum=add_complex(a,b);
-    output(a,b,sum);
+    float n,sqr;
+    n=input();
+    sqr=square_root(n);
+    output(n,sqr);
     return 0;
 }
 
-Complex input_complex()
+float input()
 {
-    Complex r;
-    scanf("%f%f",&r.real,&r.imaginary);
-    return r;
+    float n;
+    printf("Enter a number: ");
+    scanf("%f",&n);
+    return n;
 }
 
-Complex add_complex(Complex a, Complex b)
+float square_root(float n)
 {
-    Complex sum;
-    sum.real=a.real+b.real;
-    sum.imaginary=a.imaginary+b.imaginary;
-    return sum;
+    float x,Err=0.00001;
+    x=n/2;
+    while ((x*x-n)>Err||(n-x*x)>Err)
+    {
+        x=0.5*(x+n/x);
+    }
+    return x;
 }
 
-void output(Complex a, Complex b, Complex sum)
+void output(float n, float sqrroot)
 {
-    printf("The sum of %.f+%.fi and %.f+%.fi is %.f+%.fi",a.real,a.imaginary,b.real,b.imaginary,sum.real,sum.imaginary);
+    printf("The square root of %.1f is %.1f\n",n,sqrroot);
 }

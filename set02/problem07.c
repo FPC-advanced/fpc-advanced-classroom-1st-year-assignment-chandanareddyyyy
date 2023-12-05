@@ -5,15 +5,15 @@ typedef struct _triangle {
 } Triangle;
 
 Triangle input_triangle();
-void find_area(Triangle *t);
-void output(Triangle t);
+void find_area(Triangle *T);
+void output(Triangle T);
 
 int main()
 {
     Triangle T;
-    =input_triangle();
-    find_area(&t);
-    output(t);
+    T=input_triangle();
+    find_area(&T);
+    output(T);
     return 0;
 }
 

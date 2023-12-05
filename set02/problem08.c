@@ -20,12 +20,6 @@ int main()
     output(n,t,sm);
     return 0;
 }
-int input_n()
-{
-    int n;
-    scanf("%d",&n);
-    return n;
-}
 void find_area(Triangle *t)
 {
     t->area=(t->base*t->altitude)/2;
@@ -54,4 +48,27 @@ int input_n()
     int n;
     scanf("%d",&n);
     return n;
+}
+Triangle input_triangle()
+{
+    Triangle t;
+    scanf("%f%f",&t.base,&t.altitude);
+    return t;
+}
+
+void input_n_triangles(int n, Triangle t[n])
+{
+    for(int i=0;i<n;i++)
+    {
+        t[i]=input_triangle();
+    }
+}
+void output(int n, Triangle t[n], Triangle smallest)
+{
+    printf("The smallest triangle out of triangles with base and height");
+    for(int i=0;i<n;i++)
+    {
+        printf(" (%.f,%.f) ",t[i].base,t[i].altitude);
+    }
+    printf("is the triangle having base %.2f, height %.2f and area %.2f",smallest.base,smallest.altitude,smallest.area);
 }

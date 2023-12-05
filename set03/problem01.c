@@ -12,10 +12,4 @@ int main()
 
 
     
-    scalblns
-    scalblns
-    s\scalblns
-    scalblns
-    scalbln
-    scalblns
-    sca
+    

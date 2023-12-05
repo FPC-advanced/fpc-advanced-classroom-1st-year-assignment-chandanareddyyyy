@@ -13,11 +13,11 @@ void output(int n, Triangle t[n], Triangle smallest);
 int main()
 {
     int n=input_n();
-    Triangle t[n],sm;
+    Triangle t[n],small;
     input_n_triangles(n,t);
     find_n_areas(n,t);
-    sm=find_smallest_triangle(n,t);
-    output(n,t,sm);
+    small=find_smallest_triangle(n,t);
+    output(n,t,small);
     return 0;
 }
 void find_area(Triangle *t)
@@ -46,6 +46,7 @@ Triangle find_smallest_triangle(int n, Triangle t[n])
 int input_n()
 {
     int n;
+    printf("input the number of triangles");
     scanf("%d",&n);
     return n;
 }

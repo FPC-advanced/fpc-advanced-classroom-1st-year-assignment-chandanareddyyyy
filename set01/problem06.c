@@ -8,7 +8,10 @@ int main()
 {
     int num1, num2, num3, largest;
 
-    input(&num1, &num2, &num3); 
+    int a=input(&num1, &num2, &num3); 
+    int a=input(&num1, &num2, &num3);
+    int a=input(&num1, &num2, &num3);
+
 
     compare(num1, num2, num3, &largest);
 

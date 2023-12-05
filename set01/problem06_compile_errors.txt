@@ -2,3 +2,21 @@ c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.start
 collect2.exe: error: ld returned 1 exit status
 Compilation started at 12/1/2023, 7:09:59 PM
 Compilation finished at 12/1/2023, 7:10:01 PM
+Compilation started at 12/5/2023, 8:39:09 AM
+c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\problem06.c: In function 'compare':
+c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\problem06.c:32:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     largest=a;
+            ^
+c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\problem06.c:33:10: warning: comparison between pointer and integer
+     if (b>=largest)
+          ^~
+c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\problem06.c:37:10: warning: comparison between pointer and integer
+     if (c>=largest)
+          ^~
+c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\problem06.c:41:12: warning: 'return' with a value, in function returning void
+     return largest;
+            ^~~~~~~
+c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\problem06.c:30:6: note: declared here
+ void compare(int a, int b, int c, int *largest)
+      ^~~~~~~
+Compilation finished at 12/5/2023, 8:39:11 AM

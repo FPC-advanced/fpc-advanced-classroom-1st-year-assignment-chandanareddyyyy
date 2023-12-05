@@ -19,7 +19,7 @@ int main()
 
 Triangle input_triangle()
 {
-    Triangle t;
+    Triangle T;
     scanf("%f%f",&t.base,&t.altitude);
     return t;
 }

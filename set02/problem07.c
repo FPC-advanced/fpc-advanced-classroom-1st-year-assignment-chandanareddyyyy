@@ -4,7 +4,7 @@ struct _Triangle
 {
     float altitude, base, area;
 };
-typedef struct Triangle();
+typedef struct Triangle()
 
 Triangle input_triangle();
 void find_area(Triangle *T);

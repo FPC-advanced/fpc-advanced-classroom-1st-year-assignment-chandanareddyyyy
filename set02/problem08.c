@@ -49,3 +49,9 @@ Triangle find_smallest_triangle(int n, Triangle t[n])
     }
     return small;
 }
+int input_n()
+{
+    int n;
+    scanf("%d",&n);
+    return n;
+}

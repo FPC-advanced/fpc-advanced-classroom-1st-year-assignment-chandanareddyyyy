@@ -1,2 +1,12 @@
 Compilation started at 12/5/2023, 11:25:22 AM
 Compilation finished at 12/5/2023, 11:25:22 AM
+Compilation started at 12/5/2023, 11:27:55 AM
+c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set03\problem04.c: In function 'input':
+c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set03\problem04.c:19:5: error: expected ';' before 'int'
+     int x;
+     ^~~
+c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set03\problem04.c:20:17: error: 'x' undeclared (first use in this function)
+     scanf("%d",&x);
+                 ^
+c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set03\problem04.c:20:17: note: each undeclared identifier is reported only once for each function it appears in
+Compilation finished at 12/5/2023, 11:27:55 AM

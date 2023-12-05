@@ -30,3 +30,14 @@ int is_prime(int n)
     }
     }
 }
+void output(int n,int result)
+{
+    if(result==1)
+    {
+        printf("%d is a prime number.\n",n);
+    }
+    else
+    {
+        printf("%d is not a prime number.\n",n);
+    }
+}

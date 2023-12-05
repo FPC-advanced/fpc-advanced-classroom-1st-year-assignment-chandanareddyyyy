@@ -1,4 +1,4 @@
-#include<
+#include<conio.h>
 typedef struct _triangle {
 	float base, altitude, area;
 } Triangle;

@@ -1,38 +1,42 @@
 #include <stdio.h>
-#include <math.h>
-float input();
-float square_root(float n);
-void output(float n, float sqrroot);
 
-int main() {
-    float number, sqrroot;
+struct _complex 
+{
+	float real;
+	float imaginary;
+};
+typedef struct _complex Complex;
 
-    number = input();
-    sqrroot = square_root(number); 
+Complex input_complex();
+Complex add_complex(Complex a, Complex b);
+void output(Complex a, Complex b, Complex sum);
 
-    output(number, sqrroot); 
-
+int main()
+{
+    Complex a,b,sum;
+    a=input_complex();
+    b=input_complex();
+    sum=add_complex(a,b);
+    output(a,b,sum);
     return 0;
 }
 
-float input() {
-    float n;
-    printf("Enter a number: ");
-    scanf("%f", &n);
-    return n;
+Complex input_complex()
+{
+    Complex r;
+    scanf("%f%f",&r.real,&r.imaginary);
+    return r;
 }
 
-float square_root(float n) {
-    float x = n; 
-    float y = 1.0;
-    while (fabs(x - y) > 0.00001) {
-        x = (x + y) / 2.0;
-        y = n / x;
-    }
-
-    return x;
+Complex add_complex(Complex a, Complex b)
+{
+    Complex sum;
+    sum.real=a.real+b.real;
+    sum.imaginary=a.imaginary+b.imaginary;
+    return sum;
 }
 
-void output(float n, float sqrroot) {
-    printf("The square root of %.2f is approximately %.5f\n", n, sqrroot);
+void output(Complex a, Complex b, Complex sum)
+{
+    printf("The sum of %.f+%.fi and %.f+%.fi is %.f+%.fi",a.real,a.imaginary,b.real,b.imaginary,sum.real,sum.imaginary);
 }

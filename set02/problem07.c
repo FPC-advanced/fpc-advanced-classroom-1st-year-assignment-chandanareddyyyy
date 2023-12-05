@@ -20,6 +20,7 @@ int main()
 Triangle input_triangle()
 {
     Triangle T;
+    printf("enter base and alititude of the triangle");
     scanf("%f%f",&T.base,&T.altitude);
     return T;
 }

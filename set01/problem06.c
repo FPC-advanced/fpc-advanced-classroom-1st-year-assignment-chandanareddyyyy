@@ -23,7 +23,7 @@ int main()
 {
     int x;
     printf("Enter the number: ");
-    scanf("%d",x);
+    scanf("%d",&x);
     
 }
 

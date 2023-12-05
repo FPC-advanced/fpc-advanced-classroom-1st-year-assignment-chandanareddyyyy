@@ -10,3 +10,9 @@ int main()
     output(x,r);
     return 0;
 }
+int input_number()
+{
+    int x;
+    scanf("%d",&x);
+    return x;
+}

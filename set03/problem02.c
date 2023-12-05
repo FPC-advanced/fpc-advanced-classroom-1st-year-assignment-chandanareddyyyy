@@ -9,5 +9,4 @@ int main()
      int r;
      input_triangle(&x1,&y1,&x2,&y2,&x3,&y3);
      r=is_triangle(x1,y1,x2,y2,x3,y3);
-
-     
+      output(x1,y1,x2,y2,x3,y3,r);

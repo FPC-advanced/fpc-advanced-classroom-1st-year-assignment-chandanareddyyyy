@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int input(int *a, int *b, int *c);
+int input();
 void compare(int a, int b, int c, int *largest);
 void output(int a, int b, int c, int largest);
 
@@ -8,9 +8,9 @@ int main()
 {
     int num1, num2, num3, largest;
 
-    int a=input(&num1, &num2, &num3); 
-    int b=input(&num1, &num2, &num3);
-      int c=input(&num1, &num2, &num3);
+    int a=input(); 
+    int b=input();
+      int c=input();
     
     compare(num1, num2, num3, &largest);
 
@@ -19,14 +19,12 @@ int main()
     return 0;
 }
 
-int input(int *a, int *b, int *c) 
+    int input() 
 {
+    int x;
     printf("Enter the first number: ");
-    scanf("%d",a);
-    printf("Enter the second number: ");
-    scanf("%d",b);
-    printf("Enter the third number: ");
-    scanf("%d", c);
+    scanf("%d",x);
+    
 }
 
 void compare(int a, int b, int c, int *largest) 

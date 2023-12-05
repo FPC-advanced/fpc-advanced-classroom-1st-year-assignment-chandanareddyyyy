@@ -32,3 +32,15 @@ c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\probl
      if (c>=largest)
           ^~
 Compilation finished at 12/5/2023, 8:41:49 AM
+Compilation started at 12/5/2023, 8:43:33 AM
+c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\problem06.c: In function 'compare':
+c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\problem06.c:32:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     largest=a;
+            ^
+c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\problem06.c:33:10: warning: comparison between pointer and integer
+     if (b>=largest)
+          ^~
+c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\problem06.c:37:10: warning: comparison between pointer and integer
+     if (c>=largest)
+          ^~
+Compilation finished at 12/5/2023, 8:43:35 AM

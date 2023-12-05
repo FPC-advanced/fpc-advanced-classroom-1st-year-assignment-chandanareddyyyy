@@ -1,57 +1,44 @@
 #include <stdio.h>
 #include <math.h>
 
-void input_camel_details(float *radius, float *height, float *length);
-int find_mood(float radius, float height, float length);
-void output(float radius, float height, float length, int mood);
+struct camel {
+	float radius, height, length,weight;
+};
+
+typedef struct camel Camel;
+
+Camel input();
+float find_weight(Camel c);
+void output(Camel c);
 
 int main()
 {
-    float r,h,l;
-    input_camel_details(&r,&h,&l);
-    int m=find_mood(r,h,l);
-    output(r,h,l,m);
-    return 0;
+	Camel c;
+	c=input();
+	c.weight=find_weight(c);
+	output(c);
+	return 0;
 }
 
-void input_camel_details(float *radius, float *height, float *length)
+Camel input()
 {
-    printf("Radius: ");
-    scanf("%f",radius);
+	Camel c;
+	printf("Radius: ");
+    scanf("%f",&c.radius);
     printf("Height: ");
-    scanf("%f",height);
+    scanf("%f",&c.height);
     printf("Length: ");
-    scanf("%f",length);
+    scanf("%f",&c.length);
+	return c;
 }
 
-int find_mood(float radius, float height, float length)
+float find_weight(Camel c)
 {
-    if(radius<height && radius<length)
-    {
-        return -1;
-    }
-    else if(height<length)
-    {
-        return 0;
-    }
-    else
-    {
-        return 1;
-    }
+	c.weight=3.1415*(pow(c.radius,3))*(sqrt(c.height*c.length));
+	return c.weight;
 }
 
-void output(float radius, float height, float length, int mood)
+void output(Camel c)
 {
-    if(mood==-1)
-    {
-        printf("The camel is sick\n");
-    }
-    else if(mood==0)
-    {
-        printf("The camel is happy\n");
-    }
-    else
-    {
-        printf("The camel is tense\n");
-    }
+	printf("The weight of the camel with radius: %.1f, height: %.1f, length: %.1f is %.4f\n",c.radius,c.height,c.length,c.weight);
 }

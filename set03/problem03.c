@@ -2,3 +2,11 @@
 int input_number();
 int is_prime(int n);
 void output(int n, int result);
+int main()
+{
+    int x,r;
+    x=input_number();
+    r=is_prime(x);
+    output(x,r);
+    return 0;
+}

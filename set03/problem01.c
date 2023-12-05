@@ -11,8 +11,11 @@ int main()
 
 
 
-    scalblns
-
-    scalblns
-
     
+    scalblns
+    scalblns
+    s\scalblns
+    scalblns
+    scalbln
+    scalblns
+    sca

@@ -28,18 +28,17 @@ int input(int *a, int *b, int *c)
 }
 
 void compare(int a, int b, int c, int *largest) 
-{
-    if (a >= b && a>=c) 
-    {
-        *largest = a;
-    } 
-    if (b >= a )  
+{ 
+    largest=a;
+    if (b>=largest) 
     {
         *largest = b;
-    } else 
-     {
+    } 
+    if (c>=largest )  
+    {
         *largest = c;
     }
+    return largest;
 }
 
 void output(int a, int b, int c, int largest) 

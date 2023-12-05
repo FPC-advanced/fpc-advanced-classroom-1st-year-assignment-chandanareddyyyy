@@ -16,3 +16,10 @@ int input_number()
     scanf("%d",&x);
     return x;
 }
+int is_prime(int n)
+{
+    if(n>1 && n<=3)
+    {
+        return 1;
+
+}

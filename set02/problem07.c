@@ -1,10 +1,8 @@
 #include <stdio.h>
 
-struct _Triangle
-{
-    float altitude, base, area;
-};
-typedef struct Triangle()
+typedef struct _triangle {
+	float altitude, base, area;
+} Triangle;
 
 Triangle input_triangle();
 void find_area(Triangle *T);

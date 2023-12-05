@@ -20,13 +20,13 @@ int main()
 Triangle input_triangle()
 {
     Triangle T;
-    scanf("%f%f",&t.base,&t.altitude);
-    return t;
+    scanf("%f%f",&T.base,&T.altitude);
+    return T;
 }
 
-void find_area(Triangle *t)
+void find_area(Triangle *T)
 {
-    t->area=(t->base*t->altitude)/2;
+    T->area=(T->base*T->altitude)/2;
 }
 
 void output(Triangle t)

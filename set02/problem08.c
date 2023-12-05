@@ -26,3 +26,14 @@ int input_n()
     scanf("%d",&n);
     return n;
 }
+void find_area(Triangle *t)
+{
+    t->area=(t->base*t->altitude)/2;
+}
+void find_n_areas(int n, Triangle t[n])
+{
+    for(int i=0;i<n;i++)
+    {
+        find_area(&t[i]);
+    }
+}

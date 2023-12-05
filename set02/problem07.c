@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 typedef struct _triangle {
-	float a, altitude, area;
+	float altitude, base, area;
 } Triangle;
 
 Triangle input_triangle();
@@ -10,8 +10,8 @@ void output(Triangle t);
 
 int main()
 {
-    Triangle t;
-    t=input_triangle();
+    Triangle T;
+    =input_triangle();
     find_area(&t);
     output(t);
     return 0;

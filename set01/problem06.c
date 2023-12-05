@@ -6,7 +6,7 @@ void output(int a, int b, int c, int largest);
 
 int main() 
 {
-    int num1, num2, num3, largest;
+    int largest;
 
     int a=input(); 
     int b=input();
@@ -24,7 +24,7 @@ int main()
     int x;
     printf("Enter the number: ");
     scanf("%d",&x);
-    
+    return x;
 }
 
 void compare(int a, int b, int c, int *largest) 

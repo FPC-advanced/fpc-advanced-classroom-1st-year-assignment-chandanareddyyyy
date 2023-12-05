@@ -29,12 +29,12 @@ int main()
 
 void compare(int a, int b, int c, int *largest) 
 { 
-    largest=a;
-    if (b>=largest) 
+    *largest=a;
+    if (b>=*largest) 
     {
         *largest = b;
     } 
-    if (c>=largest)
+    if (c>=*largest)
     {
         *largest = c;
     }

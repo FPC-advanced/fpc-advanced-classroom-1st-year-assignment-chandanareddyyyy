@@ -22,7 +22,7 @@ int main()
     int input() 
 {
     int x;
-    printf("Enter the first number: ");
+    printf("Enter the number: ");
     scanf("%d",x);
     
 }

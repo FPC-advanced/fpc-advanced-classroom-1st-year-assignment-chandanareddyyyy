@@ -44,3 +44,28 @@ c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\probl
      if (c>=largest)
           ^~
 Compilation finished at 12/5/2023, 8:43:35 AM
+Compilation started at 12/5/2023, 8:44:53 AM
+c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\problem06.c: In function 'main':
+c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\problem06.c:15:19: warning: passing argument 4 of 'compare' from incompatible pointer type [-Wincompatible-pointer-types]
+     compare(a,b,c,&largest);
+                   ^
+c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\problem06.c:4:6: note: expected 'int *' but argument is of type 'int **'
+ void compare(int a, int b, int c, int *largest);
+      ^~~~~~~
+c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\problem06.c:17:18: warning: passing argument 4 of 'output' makes integer from pointer without a cast [-Wint-conversion]
+     output(a,b,c,largest);
+                  ^~~~~~~
+c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\problem06.c:5:6: note: expected 'int' but argument is of type 'int *'
+ void output(int a, int b, int c, int largest);
+      ^~~~~~
+c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\problem06.c: In function 'compare':
+c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\problem06.c:32:12: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     largest=a;
+            ^
+c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\problem06.c:33:10: warning: comparison between pointer and integer
+     if (b>=largest)
+          ^~
+c:\Users\fpc-advanced-classroom-1st-year-assignment-chandanareddyyyy\set01\problem06.c:37:10: warning: comparison between pointer and integer
+     if (c>=largest)
+          ^~
+Compilation finished at 12/5/2023, 8:44:54 AM

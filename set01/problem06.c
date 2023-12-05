@@ -9,10 +9,9 @@ int main()
     int num1, num2, num3, largest;
 
     int a=input(&num1, &num2, &num3); 
-    int a=input(&num1, &num2, &num3);
-    int a=input(&num1, &num2, &num3);
-
-
+    int b=input(&num1, &num2, &num3);
+      int c=input(&num1, &num2, &num3);
+    
     compare(num1, num2, num3, &largest);
 
     output(num1, num2, num3, largest); 
